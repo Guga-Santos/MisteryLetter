@@ -4,14 +4,14 @@ body {
     align-items: center;
 }
 
-#hugeSection {
-    width: 100%;
+#input-section {
+    width: fit-content;
     display: flex;
     align-items: center;
-    padding: 5%;
 }
 
 #carta-texto {
-    width: 60%;
-    margin: auto;
+    width: 800px;
+    margin-right: 10px;
+
 }
