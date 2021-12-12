@@ -5,9 +5,7 @@ criarButton.addEventListener('click', () => {
     cartaGerada.innerHTML = ''
     const texto = document.querySelector('#carta-texto').value
     if(texto.trim() === '') {
-        // let span = document.createElement('span');
-        // cartaGerada.appendChild(span)
-        // span.innerText = 
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/trim
         cartaGerada.innerText = "Por favor, digite o conteúdo da carta."
     } else {
     const array = texto.split(" ")
@@ -19,3 +17,4 @@ criarButton.addEventListener('click', () => {
     }
     document.querySelector('#carta-texto').value = ''
 })
+

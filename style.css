@@ -1,17 +1,69 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #input-section {
-    width: fit-content;
-    display: flex;
-    align-items: center;
+  width: fit-content;
+  display: flex;
+  align-items: center;
 }
 
 #carta-texto {
-    width: 800px;
-    margin-right: 10px;
+  width: 800px;
+  margin-right: 10px;
 
+}
+
+.newspaper {
+  background-color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.magazine1 {
+  background-color: teal;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.magazine2 {
+  background-image: url(images/pink-pattern.png);
+  color: fuchsia;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+.medium {
+  font-size: 20px;
+  padding: 8px;
+}
+
+.big {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
+
+.rotateleft {
+  transform: rotate(-5deg);
+}
+
+.rotateright {
+  transform: rotate(5deg);
+}
+
+.skewleft {
+  transform: skewX(10deg);
+}
+
+.skewright {
+  transform: skewX(-10deg);
 }
