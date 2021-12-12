@@ -4,11 +4,11 @@ const cartaGerada = document.querySelector('#carta-gerada');
 criarButton.addEventListener('click', () => {
     cartaGerada.innerHTML = ''
     const texto = document.querySelector('#carta-texto').value
-    if(texto === '') {
+    if(texto.trim() === '') {
         // let span = document.createElement('span');
         // cartaGerada.appendChild(span)
         // span.innerText = 
-        alert("Por favor, digite o conteúdo da carta.")
+        cartaGerada.innerText = "Por favor, digite o conteúdo da carta."
     } else {
     const array = texto.split(" ")
     for(let i = 0; i < array.length; i += 1) {
