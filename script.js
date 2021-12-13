@@ -44,7 +44,7 @@ const cartaTexto = document.querySelector('#carta-texto');
 cartaTexto.addEventListener('click', () => {
   document.querySelector('#carta-texto').value = '';
 });
-
+//
 // const teste = document.querySelector('.teste').classList;
 // cartaGerada.addEventListener('click', (e) => {
 //    if(e.target.classList != teste) {
