@@ -37,6 +37,26 @@ body {
   font-weight: 900;
 }
 
+.magazine3 {
+  background-color: orange;
+  color: purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 5000;
+  text-transform: lowercase;
+}
+
+.magazine4 {
+  background-color: salmon;
+  color: black;
+  font-family: monospace;
+}
+
+.magazine5 {
+  background-color: chocolate;
+  font-size: xx-large;
+  color: black;
+}
+
 .medium {
   font-size: 20px;
   padding: 8px;
