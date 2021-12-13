@@ -23,8 +23,8 @@ body {
 
 .newspaper {
   background-color: antiquewhite;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
+  font-family: Times New Roman, Times, serif;
+  font-weight: 700;
 }
 
 .magazine1 {
@@ -36,30 +36,10 @@ body {
 }
 
 .magazine2 {
-  background-image: url(images/pink-pattern.png);
+  background-image: url('images/pink-pattern.png');
   color: fuchsia;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
-}
-
-.magazine3 {
-  background-color: orange;
-  color: purple;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 5000;
-  text-transform: lowercase;
-}
-
-.magazine4 {
-  background-color: salmon;
-  color: black;
-  font-family: monospace;
-}
-
-.magazine5 {
-  background-color: chocolate;
-  font-size: xx-large;
-  color: black;
 }
 
 .medium {
@@ -94,5 +74,5 @@ body {
 }
 
 span {
-    margin: 2px;
+  margin: 2px;
 }
