@@ -4,6 +4,11 @@ body {
   align-items: center;
 }
 
+#carta-gerada {
+  display: flex;
+  height: fit-content;
+}
+
 #input-section {
   width: fit-content;
   display: flex;
@@ -86,4 +91,8 @@ body {
 
 .skewright {
   transform: skewX(-10deg);
+}
+
+span {
+    margin: 2px;
 }

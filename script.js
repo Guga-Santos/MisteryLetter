@@ -10,19 +10,11 @@ const todasClasses = ['newspaper',
 'rotateright',
 'skewleft',
 'skewright'];
-// const classeEstilo = [' newspaper ', ' magazine1 ', ' magazine2 ', '', ' magazine3 ', ' magazine4 ', ' magazine5 '];
-// const classeTamanho = [' medium ', ' big ', ' reallybig ', ''];
-// const classeRotacao = [' rotateleft ', ' rotateright ', ''];
-// const classeInclinacao = [' skewleft ', ' skewright ', ''];
+
 
 function classeAlea(classe, tamanho) {
   const numero = Math.floor(Math.random() * tamanho);
   return classe[numero];
-}
-
-function numeroAleatorio() {
-  const numero = Math.floor(Math.random() * 10);
-  return numero;
 }
 
 criarButton.addEventListener('click', () => {
@@ -37,12 +29,12 @@ criarButton.addEventListener('click', () => {
       const span = document.createElement('span');
       span.appendChild(document.createTextNode(array[i]));
     //   span.innerText = array[i];
+    for(let index = 0; index < 3; index += 1){ 
       const teste = Math.floor(Math.random() * todasClasses.length);
       const novaClasse = todasClasses[teste]
       span.classList.add(novaClasse)
+    }
       cartaGerada.appendChild(span);
-    //   const listaDeClasses = [classeAlea(classeEstilo, 7), classeAlea(classeTamanho, 4), classeAlea(classeRotacao, 3), classeAlea(classeInclinacao, 3)];
-    //   span.classList += listaDeClasses;
     }
   }
   document.querySelector('#carta-contador').innerText = cartaGerada.childElementCount;
@@ -52,10 +44,30 @@ const cartaTexto = document.querySelector('#carta-texto');
 cartaTexto.addEventListener('click', () => {
   document.querySelector('#carta-texto').value = '';
 });
-// const teste2 =  + " " + classeAlea(todasClasses, 9)
-// const teste3 = 
-
-cartaGerada.addEventListener('click', (event) => {
-  event.target.classList = '';
-  event.target.classList += classeAlea(todasClasses, 9)
+const teste = document.querySelector('.teste').classList;
+cartaGerada.addEventListener('click', (e) => {
+   if(e.target.classList != teste) { 
+  e.target.classList = ''
+  for(let index = 0; index < 4; index += 1){ 
+    const novaClasse = todasClasses[Math.floor(Math.random() * todasClasses.length)]
+    e.target.classList.add([novaClasse])
+}
+}
 });
+
+// const local = document.querySelector('.teste').children
+
+// cartaGerada.addEventListener('click', (e) => {
+//  for (var i = 0; i < local.length; i += 1) {
+//    local[i].classList = ''
+//    for(let index = 0; index < 3; index += 1){ 
+//         const novaClasse = todasClasses[Math.floor(Math.random() * todasClasses.length)]
+//         local[i].classList.add([novaClasse])
+//    }
+//  }
+// })
+
+// cartaGerada.addEventListener('click', (e) => {
+//     // e.target.classList = ''
+//     e.target.classList.add(todasClasses[Math.floor(Math.random() * todasClasses.length)])
+//      })
